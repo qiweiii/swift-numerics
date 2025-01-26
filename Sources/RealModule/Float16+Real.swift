@@ -175,7 +175,7 @@ extension Float16: Real {
   
   // TODO: once clang stabilizes the calling conventions for _Float16 on Intel,
   // we can re-enable these; presently the type is disabled on the target.
-  #if !(arch(i386) || arch(x86_64))
+  #if !(arch(i386) || arch(x86_64) || arch(wasm32) || os(WASI))
   @_transparent
   public static func _relaxedAdd(_ a: Float16, _ b: Float16) -> Float16 {
     _numerics_relaxed_addf16(a, b)
