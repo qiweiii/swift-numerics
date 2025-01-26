@@ -1,0 +1,40 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:swift-numerics}",
+      "name": "Debug ComplexLog1p",
+      "program": "${workspaceFolder:swift-numerics}/.build/debug/ComplexLog1p",
+      "preLaunchTask": "swift: Build Debug ComplexLog1p"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:swift-numerics}",
+      "name": "Release ComplexLog1p",
+      "program": "${workspaceFolder:swift-numerics}/.build/release/ComplexLog1p",
+      "preLaunchTask": "swift: Build Release ComplexLog1p"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:swift-numerics}",
+      "name": "Debug ComplexLog",
+      "program": "${workspaceFolder:swift-numerics}/.build/debug/ComplexLog",
+      "preLaunchTask": "swift: Build Debug ComplexLog"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:swift-numerics}",
+      "name": "Release ComplexLog",
+      "program": "${workspaceFolder:swift-numerics}/.build/release/ComplexLog",
+      "preLaunchTask": "swift: Build Release ComplexLog"
+    }
+  ]
+}
